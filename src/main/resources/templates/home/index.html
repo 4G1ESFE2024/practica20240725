@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Solicitar archivos js, css imagenes</title>
+    <script th:src="@{/js/home.js}"></script>
+    <link th:href="@{/css/home.css}" rel="stylesheet" />
+</head>
+<body>
+    <h1>Solicitar archivos js, css imagenes</h1>  
+    <input type="text" id="txtNombre"> 
+    <img th:src="@{/img/demo.png}" alt="Imagen de ejemplo" />
+    <ul>
+        <li th:each="item : ${datos}" th:text="${item}"></li>
+    </ul>
+</body>
+</html>
